@@ -1,78 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>roberthoeglinger.de - DNS Übersicht</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #F9F9F9;
-    color: #1E3A8A;
-    margin: 0;
-    padding: 20px;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine farbige Webseite</title>
+    <style>
+        /* Hintergrundfarbe für die gesamte Seite */
+        body {
+            background-color: #f0f8ff; /* Hellblau */
+            color: #333333;           /* Dunkelgrauer Text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
 
-  h1, h2 {
-    color: #1E3A8A;
-  }
+        /* Überschrift */
+        h1 {
+            color: #1e90ff;           /* Kräftiges Blau */
+            text-align: center;
+        }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #FFFFFF;
-    margin-top: 20px;
-  }
+        /* Absatz */
+        p {
+            font-size: 1.2em;
+        }
 
-  th {
-    background-color: #1E3A8A;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: left;
-  }
+        /* Button Beispiel */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff7f50; /* Korallen-Orange */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
 
-  td {
-    padding: 10px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #F3F4F6;
-  }
-
-  /* DNS-Einträge nach Typ */
-  .a-entry { color: #3B82F6; font-weight: bold; }
-  .ns-entry { color: #10B981; font-weight: bold; }
-  .soa-entry { color: #F59E0B; font-weight: bold; }
-  .cname-entry { color: #8B5CF6; font-weight: bold; }
-
-</style>
+        .btn:hover {
+            background-color: #ff4500; /* Dunkleres Orange beim Hover */
+        }
+    </style>
 </head>
 <body>
-
-<h1>roberthoeglinger.de</h1>
-<h2>DNS-Einträge</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Typ</th>
-      <th>Host</th>
-      <th>Wert / Ziel</th>
-      <th>TTL (Sek.)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="a-entry"><td>A</td><td>-</td><td>185.199.109.153</td><td>3600</td></tr>
-    <tr class="a-entry"><td>A</td><td>-</td><td>185.199.110.153</td><td>3600</td></tr>
-    <tr class="a-entry"><td>A</td><td>-</td><td>185.199.111.153</td><td>3600</td></tr>
-    <tr class="a-entry"><td>A</td><td>-</td><td>185.199.108.153</td><td>3600</td></tr>
-    <tr class="ns-entry"><td>NS</td><td>-</td><td>ns.inwx.de</td><td>86400</td></tr>
-    <tr class="ns-entry"><td>NS</td><td>-</td><td>ns2.inwx.de</td><td>86400</td></tr>
-    <tr class="ns-entry"><td>NS</td><td>-</td><td>ns3.inwx.eu</td><td>86400</td></tr>
-    <tr class="soa-entry"><td>SOA</td><td>-</td><td>ns.inwx.de / hostmaster.inwx.de</td><td>3600 / 10800 / 3600 / 604800 / 86400</td></tr>
-    <tr class="cname-entry"><td>CNAME</td><td>www</td><td>robert3003.github.io</td><td>3600</td></tr>
-  </tbody>
-</table>
-
+    <h1>Willkommen auf meiner Webseite!</h1>
+    <p>Dies ist eine farbige Startseite. Du kannst hier Inhalte einfügen.</p>
+    <a href="#" class="btn">Klick mich!</a>
 </body>
 </html>
